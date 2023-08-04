@@ -1,4 +1,16 @@
-EXPLICACION USERS.JS PARA QUIEN NO COMPRENDA QUE ES LO QUE SUCEDE EN MI CODIGO:
+En este repositorio de codigo, se puede ver la implementación de una API REST alimentada por la base de datos de MONGODB utilizando MONGOOSE, que posee un sistema de usuarios recibido mediante solicitudes fetch enviadas desde el front y captadas por express mediante las rutas asignadas, ya sea para registrar o loguear un usuario, cuando se quiere registrar un usuario se realizan diversas validaciones y se hashea la contraseña por seguridad. Cuando se intenta ingresar un usuario realiza las mismas validaciones y compara la contraseña con la guardada en la base de datos lo mismo que el email. El codigo se puede implementar para un sistema de usuarios o de consultoría, fué probado con POSTMAN mediante diversas solicitudes para testear que funcione correctamente, esto mismo puede ser aplicado a solicitudes FETCH dentro de un formulario del frontend. 
+
+Cosas que faltan agregar: Mejorar en JWT y la protección de rutas para no poder ser accedidades con una inyección SQL, ni desde el localstorage / cookies.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Explicación paso a paso de cada archivo por si alguien quiere aprenderlo:
+
+Users.js:
 
 Vamos a analizar paso a paso qué hace este código:
 
